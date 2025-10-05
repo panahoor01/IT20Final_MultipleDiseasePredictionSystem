@@ -1,13 +1,17 @@
 import pickle
+import os
 import streamlit as st
 from streamlit_option_menu import option_menu
+
+# Use relative paths (works locally and on Streamlit Cloud)
+base_path = os.path.join(os.path.dirname(__file__), 'saved models')
 
 # Load the saved models and scalers
 diabetes_model = pickle.load(open('C:/Projects/Deploying Machine Learning Model/Multiple Disease Prediction System/saved models/diabetes_model.sav', 'rb'))
 diabetes_scaler = pickle.load(open('C:/Projects/Deploying Machine Learning Model/DiabetesPrediction_Folder/diabetes_scaler.sav', 'rb'))
 
 # Load heart disease model and scaler (adjust paths as needed)
-heart_disease_model = pickle.load(open('C:/Projects/Deploying Machine Learning Model/Multiple Disease Prediction System/saved models/heartdisease_model.sav', 'rb'))
+heartdisease_model = pickle.load(open('C:/Projects/Deploying Machine Learning Model/Multiple Disease Prediction System/saved models/heartdisease_model.sav', 'rb'))
 heart_scaler = pickle.load(open('C:/Projects/Deploying Machine Learning Model/HeartDiseasePrediction_Folder/heartdisease_scaler.sav', 'rb'))  # if you have a separate scaler
 
 # Load Parkinson's model and scaler (adjust paths as needed)
