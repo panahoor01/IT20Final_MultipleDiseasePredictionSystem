@@ -1,0 +1,78 @@
+# =====================================
+# PYTHON & STREAMLIT PROJECT GITIGNORE
+# =====================================
+
+# --- Python cache / compiled files ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual environments ---
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+*.env
+
+# --- Jupyter / IPython checkpoints ---
+.ipynb_checkpoints/
+*.ipynb
+
+# --- Model and data artifacts ---
+*.pkl
+*.joblib
+*.h5
+*.csv
+*.xlsx
+*.db
+*.sav
+
+# --- Large files or raw data folders ---
+/data/
+/datasets/
+/saved models/
+/models/
+/checkpoints/
+
+# --- OS & IDE files ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# --- Streamlit secrets/config (local only) ---
+.streamlit/secrets.toml
+
+# --- Devcontainer & temporary folders ---
+.devcontainer/
+__MACOSX/
+temp/
+tmp/
+
+# --- Anaconda / Conda environment ---
+*.conda
+*.yml
+
+# --- Build / distribution folders ---
+build/
+dist/
+*.egg-info/
+*.spec
+
+# --- PyInstaller / packaging ---
+*.manifest
+*.spec
+
+# --- Spyder project settings ---
+.spyproject/
+.spyderproject
+
+# --- Jupyter Notebook checkpoints ---
+.ipynb_checkpoints/
+
+# --- Local testing / experiment files ---
+test.py
+test_*.py
+debug_*.py
